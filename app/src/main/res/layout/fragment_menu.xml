@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.iu.fragments.MenuFragment"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/orange">
+
+            <TextView
+                android:layout_width="281dp"
+                android:layout_height="115dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Bienvenido"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_perfil"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_profile"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Perfil"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragPublicaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_publicaciones"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_post"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Publicaciones"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragReportes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_reportes"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_notification"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Ultimos reportes"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragMapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_mapa"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_map"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Localizacion"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragConfiguracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_configuracion"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_settings"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Configuración"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragSalir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/orange">
+
+                        <ImageButton
+                            android:id="@+id/nav_salir"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/orange"
+                            android:src="@drawable/ic_outline_logout"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Cerrar sesión"
+                            android:textAlignment="center"
+                            android:textColor="@color/shadow_blue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

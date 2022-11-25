@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.825" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/olvidoContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/olvidaste_tu_contrase_a"
